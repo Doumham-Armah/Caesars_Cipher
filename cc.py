@@ -25,6 +25,9 @@ while True:
     if choice == 'encode':
         message = input("Enter message to encrypt: ")
         shift_val = int(input("Enter shift value: "))
+        caesar(message, shift_val, choice)
     elif choice == 'decode':
         message = input("Enter message to decrypt: ")
         shift_val = int(input("Enter shift value: "))
+        caesar(message, shift_val, choice)
+
