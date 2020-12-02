@@ -5,11 +5,11 @@ letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','
 
 def caesar(message, shift_val, mechanism):
     final_message = ''
+    if mechanism  == 'decode':
+        shift_val *= -1
 
     for letter in message:
         if letter != ' ':
-            if mechanism  == 'decode':
-                shift_val *= -1
             final_message += letters[letters.index(letter) + shift_val]
         else:
             final_message += ' '
